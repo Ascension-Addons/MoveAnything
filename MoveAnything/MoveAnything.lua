@@ -5638,6 +5638,5 @@ EscapeMenu:AddButton("MoveAnything!", EscapeMenuSection.AddOns, function()
 		ReloadUI()
 	else
 		ShowUIPanel(MAOptions)
-		return true
 	end
-end)
+end, nil, true)
