@@ -1,22 +1,5 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
-	<Button name="GameMenuButtonMoveAnything" parent="GameMenuFrame" inherits="GameMenuButtonTemplate" text="MoveAnything!">
-		<Scripts>
-			<OnLoad>
-				self:ClearAllPoints()
-				self:SetPoint("TOP", GameMenuButtonContinue, "BOTTOM", 0, -25)
-			</OnLoad>
-			<OnClick>
-				if IsShiftKeyDown() and IsControlKeyDown() and IsAltKeyDown() then
-					ReloadUI()
-				else
-					ShowUIPanel(MAOptions)
-					HideUIPanel(GameMenuFrame)
-				end
-			</OnClick>
-		</Scripts>
-	</Button>
-
 	<Button name="MAResizeButton" virtual="true">
 		<Size>
 			<AbsDimension x="8" y="8"/>
